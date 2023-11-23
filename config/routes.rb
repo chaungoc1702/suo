@@ -3,14 +3,14 @@ Rails.application.routes.draw do
 
   resources :admin, only: :index
 
-  namespace :admin, only: :index do
+  namespace :admin do
     resources :levels
     resources :lessons
     resources :vocabulary_items
     resources :questions    
   end
 
-  resources :learn, only: :index do
+  namespace :learn do
     resources :levels
     resources :lessons
     resources :vocabulary_items

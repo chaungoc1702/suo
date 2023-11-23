@@ -1,0 +1,19 @@
+table
+  thead
+    tr
+      th Name
+      th Code
+      th Title
+      th Description
+      th colspan="2"
+
+  tbody
+    - @lessons.each do |lesson|
+      tr
+        td = lesson.name
+        td = lesson.code
+        td = lesson.title
+        td = lesson.description
+        td = link_to 'Edit', edit_admin_lesson_path(lesson)
+        td = link_to 'Delete', admin_lesson_path(lesson), method: :delete, data: { confirm: 'Are you sure?' }
+  
