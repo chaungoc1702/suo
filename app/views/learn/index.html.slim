@@ -1,0 +1,9 @@
+h1 Welcome User!!
+
+p Which level would you like to study?
+
+ul
+  - @levels.each do |level|
+    li
+      span style='float: right; color: gray;' = level.code
+      span = level.name

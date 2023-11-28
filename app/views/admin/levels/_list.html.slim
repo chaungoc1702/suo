@@ -1,0 +1,15 @@
+table
+  thead
+    tr
+      th Name
+      th Code
+      th colspan="2"
+
+  tbody
+    - @levels.each do |level|
+      tr
+        td = level.name
+        td = level.code
+        td = link_to 'Edit', edit_admin_level_path(level)
+        td = link_to 'Delete', admin_level_path(level), method: :delete, data: { confirm: 'Are you sure?' }
+  

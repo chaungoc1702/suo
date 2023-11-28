@@ -10,8 +10,8 @@ Rails.application.routes.draw do
     resources :questions    
   end
 
-  namespace :learn do
-    resources :levels
+  resources :learn do
+    # resources :levels
     resources :lessons
     resources :vocabulary_items
     resources :questions    
