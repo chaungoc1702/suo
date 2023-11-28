@@ -1,0 +1,5 @@
+- path = @level.new_record? ? admin_levels_path : admin_level_path(@level)
+= simple_form_for @level, url: path do |f|
+  = f.input :name
+  = f.input :code
+  = f.button :submit

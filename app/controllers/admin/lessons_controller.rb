@@ -27,8 +27,6 @@ module Admin
       if @lesson.save!
         redirect_to admin_lessons_path, notice: 'Lesson was successfully created.'
       else
-        puts "HERE"
-        puts @lesson.errors.full_messages
         render :new
       end
     end
