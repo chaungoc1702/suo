@@ -1,9 +1,12 @@
-h1 Welcome User!!
 
-p Which level would you like to study?
+.mx-auto.max-w-md
 
-ul
-  - @levels.each do |level|
-    li
-      span style='float: right; color: gray;' = level.code
-      span = level.name
+  h1.text-3xl.font-bold Welcome User!!
+
+  p Which level would you like to study?
+
+  ul.divide-y.divide-gray-100
+    - @levels.each do |level|
+      li.flex.justify-between.gap-x-6.py-5
+        span = level.name
+        span.text-gray-500 = level.code
