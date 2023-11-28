@@ -1,9 +1,13 @@
-h1 Welcome User!!
+.text-3xl.font-bold.underline
+  | Hello
 
-p Which level would you like to study?
+.bg-emerald.w-52.h-52
+  h1 Welcome User!!
 
-ul
-  - @levels.each do |level|
-    li
-      span style='float: right; color: gray;' = level.code
-      span = level.name
+  p Which level would you like to study?
+
+  ul
+    - @levels.each do |level|
+      li
+        span style='float: right; color: gray;' = level.code
+        span = level.name
