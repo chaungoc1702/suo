@@ -1,12 +1,26 @@
-
 .mx-auto.max-w-md
-
-  h1.text-3xl.font-bold Welcome User!!
+  h1.text-3xl.font-bold Super JLPT
 
   p Which level would you like to study?
 
   ul.divide-y.divide-gray-100
     - @levels.each do |level|
-      li.flex.justify-between.gap-x-6.py-5
-        span = level.name
-        span.text-gray-500 = level.code
+      a href='N1.html'
+        li.flex.justify-between.gap-x-6.py-5
+          / Thay đổi level.link thành thuộc tính thực sự chứa URL
+          span = level.name
+          / span.text-gray-500 = level.code
+
+  section#section5.section
+    h2
+      | Contact Me
+    .contact-section
+      .contact-icons
+        a href="https://www.facebook.com/profile.php?id=100011170022091" target="_blank"
+          i.fab.fa-facebook
+        a href="https://www.youtube.com/channel/UCb89dK4sa3Rk-Xsy9xOZHwA" target="_blank"
+          i.fab.fa-youtube
+        a href="https://www.instagram.com/your-instagram-profile" target="_blank"
+          i.fab.fa-instagram
+        a href="https://www.tiktok.com/your-tiktok-profile" target="_blank"
+          i.fab.fa-tiktok
