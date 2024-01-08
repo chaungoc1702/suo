@@ -13,7 +13,8 @@ gem "turbo-rails"
 gem "stimulus-rails"
 gem "bcrypt", "~> 3.1.7"
 gem "tzinfo-data", platforms: %i[ windows jruby ]
-gem "tailwindcss-rails"
+gem 'bootstrap', '~> 5.3.2'
+gem 'dartsass-sprockets'
 gem "bootsnap", require: false
 
 group :development, :test do
