@@ -7,4 +7,8 @@ class Lesson
   field :description, type: String
 
   belongs_to :level
+
+  def slug
+    code.downcase
+  end
 end

@@ -1,0 +1,10 @@
+h1 = "#{@level.name} Lessons"
+
+table.table
+  tbody
+    - @lessons.each do |lesson|
+      tr
+        td
+          = link_to(lesson_path(lesson_slug: lesson.slug, level_slug: @level.slug)) do
+            = lesson.name
+        td = lesson.description

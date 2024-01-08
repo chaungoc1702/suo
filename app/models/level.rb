@@ -5,4 +5,8 @@ class Level
   field :code, type: String
 
   has_many :lessons
+
+  def slug
+    code.downcase
+  end
 end

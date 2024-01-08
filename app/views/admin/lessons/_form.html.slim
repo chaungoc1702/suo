@@ -1,5 +1,6 @@
 - path = @lesson.new_record? ? admin_lessons_path : admin_lesson_path(@lesson)
 = simple_form_for @lesson, url: path do |f|
+  = f.input :level_id, collection: @levels
   = f.input :name
   = f.input :title
   = f.input :code

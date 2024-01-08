@@ -1,10 +1,10 @@
 module Admin
   class LessonsController < ApplicationController
     before_action :set_lesson, only: [:show, :edit, :update, :destroy]
-  
+
     # GET /lessons
     def index
-      @lessons = Lesson.all
+      @lessons = Lesson.all.includes(:level)
     end
   
     # GET /lessons/1
@@ -14,10 +14,12 @@ module Admin
     # GET /lessons/new
     def new
       @lesson = Lesson.new
+      fetch_form_associations
     end
   
     # GET /lessons/1/edit
     def edit
+      fetch_form_associations
     end
   
     # POST /lessons
@@ -27,6 +29,7 @@ module Admin
       if @lesson.save!
         redirect_to admin_lessons_path, notice: 'Lesson was successfully created.'
       else
+        fetch_form_associations
         render :new
       end
     end
@@ -36,6 +39,7 @@ module Admin
       if @lesson.update(lesson_params)
         redirect_to admin_lessons_path, notice: 'Lesson was successfully updated.'
       else
+        fetch_form_associations
         render :edit
       end
     end
@@ -55,7 +59,11 @@ module Admin
 
     # Only allow a list of trusted parameters through.
     def lesson_params
-      params.require(:lesson).permit(:name, :code, :title, :description)
+      params.require(:lesson).permit(:name, :code, :level_id, :title, :description)
+    end
+
+    def fetch_form_associations
+      @levels = Level.all.to_a
     end
   end
 end
