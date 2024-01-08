@@ -1,6 +1,7 @@
-table
+table.table
   thead
     tr
+      th Level
       th Name
       th Code
       th Title
@@ -10,6 +11,7 @@ table
   tbody
     - @lessons.each do |lesson|
       tr
+        td = lesson.level&.name
         td = lesson.name
         td = lesson.code
         td = lesson.title
