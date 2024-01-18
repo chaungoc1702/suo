@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /* Trong tệp styles.css */
 /* Đây là một ví dụ về CSS, bạn có thể điều chỉnh hoặc thêm các quy tắc CSS khác */
 body {
@@ -15,15 +17,9 @@ h1 {
   padding-bottom: 10px; /* Khoảng cách giữa đường viền và nội dung */
 }
 
-@charset "UTF-8";
-
 /* 本文の基本スタイル */
 body {
 	font-family: "Kosugi Maru", sans-serif;
-	
-}
-h1 {
-	
 }
 
 /* Webサイトのタイトルのスタイル */
@@ -175,3 +171,104 @@ footer {
 	margin-right: 1em;
 }
 
+// Below are styles from HTML
+
+/* ... (giữ nguyên phần CSS từ mã trước) ... */
+body {
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f8f9fa;
+	color: #495057;
+}
+
+header {
+	text-align: center;
+	padding: 50px 0;
+	// background-color: #f0c8c8;
+	background-image: image-url('girl.jpg');
+	color: white;
+	font-size: 36px;
+	letter-spacing: 1px;
+}
+
+nav {
+	display: flex;
+	justify-content: center;
+	background-color: #343a40;
+	color: white;
+	padding: 15px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+	text-decoration: none;
+	color: white;
+	margin: 0 20px;
+	font-weight: bold;
+	font-size: 18px;
+	transition: color 0.3s;
+}
+
+nav a:hover {
+	color: #f0c8c8F;
+}
+
+main {
+	padding: 50px 20px;
+	text-align: justify;
+}
+
+section {
+	margin-bottom: 60px;
+}
+
+section h2 {
+	color: hsl(0, 0%, 100%);
+	font-size: 28px;
+	margin-bottom: 20px;
+}
+
+footer {
+	text-align: center;
+	padding: 30px 20px;
+	background-color: #f0c8c8;
+	color: white;
+}
+
+@media (max-width: 768px) {
+	nav {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	nav a {
+		margin: 10px 0;
+	}
+}
+
+.new-lesson-button {
+	display: inline-block;
+	margin-left: auto;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding: 10px 20px;
+	font-size: 16px;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	background-color: #28a745;
+	border: 1px solid #28a745;
+	border-radius: 5px;
+	transition: background-color 0.3s;
+}
+
+.new-lesson-button:hover {
+	background-color: #218838;
+}
+
+section h2 {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
