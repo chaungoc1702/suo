@@ -17,90 +17,10 @@ h1 {
   padding-bottom: 10px; /* Khoảng cách giữa đường viền và nội dung */
 }
 
-/* 本文の基本スタイル */
-body {
-	font-family: "Kosugi Maru", sans-serif;
-}
 
-/* Webサイトのタイトルのスタイル */
-#site_title {
-	border: 2px solid #80a491;
-	border-radius: 8px;
-	position: relative;
-	color: #5a544b;
-}
-
-/* メインタイトルのスタイル */
-#main_title {
-	/*border:1px solid black;*/
-	background-color: #b9d0b1;
-	text-align: right;
-	font-size: 3em;
-	font-family:  "M PLUS Rounded 1c", sans-serif;
-	padding-right: 50px;
-	padding-bottom:50px;
-	position: relative;
-	margin:0px 10px;
-}
-
-/* サブタイトルのスタイル */
-#sub_title {
-	/*border:1px solid black;*/
-	background-color: #80a491;
-	text-align: right;
-	padding-right: 50px;
-	padding-top:50px;
-	font-size: 1em;
-	position: relative;
-	margin:0px 10px;
-}
-
-#sub_title_head {
-	font-family: "Lobster Two", sans-serif;
-	margin-right: 1em;
-}
-
-#sub_title_body {
-	font-family:  "M PLUS Rounded 1c", sans-serif;
-}
-
-/* スクールロゴのスタイル */
-#school_logotype {
-	position: absolute;
-	top: 5px;
-	left: 10px;
-	width: auto;
-	height: 95%;
-	opacity: 0.5;
-}
-
-/* グローバルナビゲーションのスタイル */
-#gnavi ul {
-	display: flex;
-	list-style-type: none;
-/*	margin: 0px auto; */
-	justify-content: center;
-	padding: 0;
-}
-
-#gnavi ul li a {
-	display: block;
-	border: 1px none;
-	border-radius: 8px;
-	padding:10px 10px;
-	text-align: center;
-	margin: 5px;
-	width: 200px;
-	line-height: 50px;	/* 高さを指定することで、文字を縦方向の中央に配置できる */
-	background-color: #ｆ7ｃ6ｂｄ;
-	color: ivory;
-	text-decoration: none;
-	font-family:  "M PLUS Rounded 1c", sans-serif;
-}
-
-/* 第2レベルの見出しのスタイル */
+/* 第2レベルの見出しのスタイル tao khung mau hong cac cap do jlpt*/
 h2 {
-	border: 4px solid ivory; 
+	border: 4px solid ivory;
 	border-radius: 8px;
 	padding: 8px;
 	background-color: #f0c8c8;
@@ -109,33 +29,8 @@ h2 {
 	font-family: "M PLUS Rounded 1c", sans-serif;
 }
 
-/* 第3レベルの見出しのスタイル */
-h3 {
-	clear: left;
-	padding-top: 1em;
-	color: darkolivegreen;
-	font-size: 1.5em;
-	font-family:  "M PLUS Rounded 1c", sans-serif;
-}
 
-h3::before {
-	content: "★";
-}
 
-h3::after {
-	content: "★";
-}
-
-/* 建物の写真のスタイル */
-#building {
-	display: block;
-	border: 1px solid #b79b5b;
-	float: left;
-	margin-left: 20px;
-	margin-right: 20px;
-	width: 50%;
-	height: auto;
-}
 
 /* 表のスタイル */
 table {
@@ -185,8 +80,7 @@ body {
 header {
 	text-align: center;
 	padding: 50px 0;
-	// background-color: #f0c8c8;
-	background-image: image-url('girl.jpg');
+	background-color: #f0c8c8;
 	color: white;
 	font-size: 36px;
 	letter-spacing: 1px;
@@ -316,4 +210,15 @@ footer {
 
 .navigation-buttons a:hover {
 	background-color: #218838;
+}
+#hinhnentrang2
+body {
+	background-image: url('hinh1.jpg'); /* Đường dẫn đến hình nền của bạn */
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.table {
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
