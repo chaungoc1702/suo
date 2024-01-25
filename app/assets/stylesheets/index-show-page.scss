@@ -1,0 +1,143 @@
+.index-show-page {
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+    color: #333;
+  }
+
+  header {
+    background-color: #4CAF50;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  header img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 2px solid #fff;
+    padding: 4px;
+  }
+
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+  }
+
+  .lesson-info {
+    flex: 1;
+    max-width: 40%;
+    margin-right: 20px;
+  }
+
+  .lesson-image {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .lesson-details {
+    flex: 1;
+    max-width: 50%;
+  }
+
+  .lesson-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .lesson-title h2 {
+    color: #4CAF50;
+    font-size: 28px;
+    margin-right: 20px;
+  }
+
+  .lesson-title img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 2px solid #4CAF50;
+    padding: 4px;
+  }
+
+  .sections-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .section {
+    border: 1px solid #4CAF50;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section h3 {
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 20px;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+
+  .section img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  .section-description {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f9f9f9;
+  }
+
+  .completion-bar {
+    flex-grow: 1;
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 10px;
+    margin-left: 10px;
+  }
+
+  .completion-progress {
+    height: 100%;
+    border-radius: 10px;
+    background-color: #4CAF50;
+  }
+
+  .completion-percentage {
+    font-size: 18px;
+    color: #4CAF50;
+    margin-left: 10px;
+  }
+
+  .section-link {
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .section-link:hover {
+    transform: scale(1.1);
+  }
+}
