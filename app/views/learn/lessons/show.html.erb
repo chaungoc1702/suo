@@ -22,9 +22,9 @@
             </div>
             <p class="completion-percentage">90%</p>
           </div>
-        <% end %>
+        <%end %>
 
-        <div class="section section-link" onclick="location.href='grammar-lesson-link';">
+        <%= link_to(grammar_index_path, class: 'section section-link') do %>
           <h3>
             <img src="grammar-image.jpg" alt="Grammar Image"> Ngữ pháp
           </h3>
@@ -34,9 +34,9 @@
             </div>
             <p class="completion-percentage">75%</p>
           </div>
-        </div>
+        <% end %>
 
-        <div class="section section-link" onclick="location.href='practice-lesson-link';">
+        <%= link_to(practice_index_path, class: 'section section-link') do %>
           <h3>
             <img src="practice-image.jpg" alt="Practice Image"> Thực hành
           </h3>
@@ -46,9 +46,9 @@
             </div>
             <p class="completion-percentage">60%</p>
           </div>
-        </div>
+        <% end %>
 
-        <div class="section section-link" onclick="location.href='test-lesson-link';">
+        <%= link_to(test_index_path, class: 'section section-link') do %>
           <h3>
             <img src="test-image.jpg" alt="Test Image"> Kiểm tra
           </h3>
@@ -58,7 +58,7 @@
             </div>
             <p class="completion-percentage">40%</p>
           </div>
-        </div>
+        <% end %>
       </div>
     </div>
   </main>
