@@ -1,0 +1,28 @@
+
+<div class="lesson-show-page">
+  <header>
+    <h1>
+      <%= @level.name %> Lessons
+    </h1>
+  </header>
+
+  <main>
+    <% @lessons.each do |lesson| %>
+      <%= link_to(lesson_path(lesson_slug: lesson.slug, level_slug: @level.slug)) do %>
+        <div class="lesson-circle">
+          <img src="lesson1.jpg" alt="<%= lesson.name %>">
+        </div>
+        <%= lesson.name %>
+      <% end %>
+    <% end %>
+  </main>
+
+  <div class="navigation-buttons">
+    <a href="hoc-tap.html">Học tập</a>
+    <a href="luyen-tap.html">Luyện tập</a>
+    <a href="tu-vung-yeu-thich.html">Từ vựng yêu thích</a>
+    <a href="index.html">Trang chủ</a>
+  </div>
+</div>
+
+<input type="text" id="searchInput" placeholder="Tìm kiếm...">

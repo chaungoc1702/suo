@@ -1,5 +1,5 @@
 class LearnController < ApplicationController
   def index
-    @levels = Level.all
+    @levels = Level.reorder(code: -1).all
   end
 end

@@ -1,8 +1,10 @@
+@charset "UTF-8";
+
 /* Trong tệp styles.css */
 /* Đây là một ví dụ về CSS, bạn có thể điều chỉnh hoặc thêm các quy tắc CSS khác */
 body {
   font-family: 'Playfair Display', Tahoma, Geneva, Verdana, sans-serif; /* Chọn font chữ */
-  background-color: #f7dddd;
+  background-color: #f39292;
   color: #7e97e1; /* Màu hồng */
 }
 
@@ -15,4 +17,208 @@ h1 {
   padding-bottom: 10px; /* Khoảng cách giữa đường viền và nội dung */
 }
 
-/* Các quy tắc CSS khác */
+
+/* 第2レベルの見出しのスタイル tao khung mau hong cac cap do jlpt*/
+h2 {
+	border: 4px solid ivory;
+	border-radius: 8px;
+	padding: 8px;
+	background-color: #f0c8c8;
+	color: ivory;
+	font-size: 2em;
+	font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+
+
+
+/* 表のスタイル */
+table {
+	border: 1px solid ivory;
+	border-collapse: collapse;
+}
+
+th {
+	border: 1px solid ivory;
+	padding: 10px;
+	background: #5a544b;
+	color: ivory;
+	white-space: nowrap;
+}
+
+td {
+	border: 1px solid ivory;
+	padding: 10px;
+	background: #d4dcda;
+}
+
+caption {
+	font-size: 1.5em;
+}
+
+/* フッターのスタイル */
+footer {
+	clear: left;
+	padding-top: 1em;
+}
+
+#footer_link {
+	margin-right: 1em;
+}
+
+// Below are styles from HTML
+
+/* ... (giữ nguyên phần CSS từ mã trước) ... */
+body {
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f8f9fa;
+	color: #495057;
+}
+
+header {
+	text-align: center;
+	padding: 50px 0;
+	background-color: #f0c8c8;
+	color: white;
+	font-size: 36px;
+	letter-spacing: 1px;
+}
+
+nav {
+	display: flex;
+	justify-content: center;
+	background-color: #343a40;
+	color: white;
+	padding: 15px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+	text-decoration: none;
+	color: white;
+	margin: 0 20px;
+	font-weight: bold;
+	font-size: 18px;
+	transition: color 0.3s;
+}
+
+nav a:hover {
+	color: #f0c8c8F;
+}
+
+main {
+	padding: 50px 20px;
+	text-align: justify;
+}
+
+section {
+	margin-bottom: 60px;
+}
+
+section h2 {
+	color: hsl(0, 0%, 100%);
+	font-size: 28px;
+	margin-bottom: 20px;
+}
+
+footer {
+	text-align: center;
+	padding: 30px 20px;
+	background-color: #f0c8c8;
+	color: white;
+}
+
+@media (max-width: 768px) {
+	nav {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	nav a {
+		margin: 10px 0;
+	}
+}
+
+.new-lesson-button {
+	display: inline-block;
+	margin-left: auto;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding: 10px 20px;
+	font-size: 16px;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	background-color: #28a745;
+	border: 1px solid #28a745;
+	border-radius: 5px;
+	transition: background-color 0.3s;
+}
+
+.new-lesson-button:hover {
+	background-color: #218838;
+}
+
+section h2 {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+// From lesson page
+
+.lesson-circle {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin: 10px;
+}
+
+.lesson-circle img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+footer {
+	background-color: #343a40;
+	color: #fff;
+	text-align: center;
+	padding: 10px;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+.navigation-buttons {
+	text-align: center;
+	margin: 10px;
+}
+
+.navigation-buttons a {
+	margin: 5px;
+	padding: 10px 20px;
+	text-decoration: none;
+	color: #fff;
+	background-color: #28a745;
+	border: 1px solid #28a745;
+	border-radius: 5px;
+}
+
+.navigation-buttons a:hover {
+	background-color: #218838;
+}
+#hinhnentrang2
+body {
+	background-image: url('hinh1.jpg'); /* Đường dẫn đến hình nền của bạn */
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.table {
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

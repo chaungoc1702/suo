@@ -1,0 +1,65 @@
+<div class="index-show-page">
+  <header>
+    <img src="small-lesson1-image.jpg" alt="Small Lesson 1 Image">
+    <h1>Bài học 1 - Học tiếng Nhật</h1>
+  </header>
+
+  <main>
+    <div class="lesson-details">
+      <div class="lesson-title">
+        <img src="small-lesson1-image.jpg" alt="Small Lesson 1 Image">
+        <h2>Tiêu đề bài học 1</h2>
+      </div>
+
+      <div class="sections-container">
+        <%= link_to(vocabulary_index_path, class: 'section section-link') do %>
+          <h3>
+            <img src="vocabulary-image.jpg" alt="Vocabulary Image"> Từ vựng
+          </h3>
+          <div class="section-description">
+            <div class="completion-bar">
+              <div class="completion-progress" style="width: 90%;"></div>
+            </div>
+            <p class="completion-percentage">90%</p>
+          </div>
+        <%end %>
+
+        <%= link_to(grammar_index_path, class: 'section section-link') do %>
+          <h3>
+            <img src="grammar-image.jpg" alt="Grammar Image"> Ngữ pháp
+          </h3>
+          <div class="section-description">
+            <div class="completion-bar">
+              <div class="completion-progress" style="width: 75%;"></div>
+            </div>
+            <p class="completion-percentage">75%</p>
+          </div>
+        <% end %>
+
+        <%= link_to(practice_index_path, class: 'section section-link') do %>
+          <h3>
+            <img src="practice-image.jpg" alt="Practice Image"> Thực hành
+          </h3>
+          <div class="section-description">
+            <div class="completion-bar">
+              <div class="completion-progress" style="width: 60%;"></div>
+            </div>
+            <p class="completion-percentage">60%</p>
+          </div>
+        <% end %>
+
+        <%= link_to(test_index_path, class: 'section section-link') do %>
+          <h3>
+            <img src="test-image.jpg" alt="Test Image"> Kiểm tra
+          </h3>
+          <div class="section-description">
+            <div class="completion-bar">
+              <div class="completion-progress" style="width: 40%;"></div>
+            </div>
+            <p class="completion-percentage">40%</p>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </main>
+</div>
