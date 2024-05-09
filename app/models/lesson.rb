@@ -5,6 +5,7 @@ class Lesson
   field :code, type: String
   field :title, type: String
   field :description, type: String
+  field :image_filename, type: String
 
   belongs_to :level
 

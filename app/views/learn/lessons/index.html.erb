@@ -10,7 +10,8 @@
     <% @lessons.each do |lesson| %>
       <%= link_to(lesson_path(lesson_slug: lesson.slug, level_slug: @level.slug)) do %>
         <div class="lesson-circle">
-          <img src="lesson1.jpg" alt="<%= lesson.name %>">
+          <%= image_tag(lesson.image_filename, alt: lesson.name) if lesson.image_filename.present? %>
+          <!--<img src="lesson1.jpg" alt="<%#= lesson.name %>">-->
         </div>
         <%= lesson.name %>
       <% end %>

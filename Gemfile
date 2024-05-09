@@ -16,6 +16,7 @@ gem "tzinfo-data", platforms: %i[ windows jruby ]
 gem 'bootstrap', '~> 5.3.2'
 gem 'dartsass-sprockets'
 gem "bootsnap", require: false
+gem 'google-apis-sheets_v4', '~> 0.31'
 
 group :development, :test do
   gem "debug", platforms: %i[ mri windows ]

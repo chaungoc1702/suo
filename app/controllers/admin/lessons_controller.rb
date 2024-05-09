@@ -59,7 +59,7 @@ module Admin
 
     # Only allow a list of trusted parameters through.
     def lesson_params
-      params.require(:lesson).permit(:name, :code, :level_id, :title, :description)
+      params.require(:lesson).permit(:name, :code, :level_id, :title, :description, :image_filename)
     end
 
     def fetch_form_associations
